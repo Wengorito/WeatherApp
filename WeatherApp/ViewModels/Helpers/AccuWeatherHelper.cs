@@ -60,9 +60,7 @@ namespace WeatherApp.ViewModels.Helpers
 
         public static async Task<CurrentConditions> GetCurrentConditions(string citiKey)
         {
-            //var conditions = new <City>();
-
-            var url = string.Format(BASE_URL, citiKey, ReadSetting("AccuWeatherAppKey"));
+            var url = BASE_URL + string.Format(CURRENT_CONDITIONS_ENDPOINT, citiKey, ReadSetting("AccuWeatherAppKey"));
 
             using (HttpClient client = new HttpClient())
             {

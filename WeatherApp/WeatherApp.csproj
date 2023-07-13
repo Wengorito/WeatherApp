@@ -143,6 +143,7 @@
     </ApplicationDefinition>
     <Compile Include="ViewModels\Commands\SearchCommand.cs" />
     <Compile Include="ViewModels\Helpers\AccuWeatherHelper.cs" />
+    <Compile Include="ViewModels\ValueConverters\BoolToRainConverter.cs" />
     <Compile Include="ViewModels\WeatherVM.cs" />
     <Compile Include="Views\WeatherWindow.xaml.cs">
       <DependentUpon>WeatherWindow.xaml</DependentUpon>
